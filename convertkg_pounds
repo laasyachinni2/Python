@@ -1,0 +1,8 @@
+def KG_to_pound():
+    try:
+        kg=float(input("Enter Kg:"))
+        pound=kg*2.20
+        print("The weight is in pounds:",pound)
+    except ValueError:
+        print("Enter a valid input")
+KG_to_pound()
