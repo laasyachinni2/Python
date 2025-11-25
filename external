@@ -1,0 +1,207 @@
+# kilograms=float(input("Enter the weight in kilograms:"))
+# pounds=kilograms*2.2
+# print(f"{kilograms} kilograms weight is equal to {pounds} pounds")
+
+#-------------------------------------------------------------------------------------------------------------
+
+# for num in range(8,90,3):
+#     print(num,end=" ")
+
+#-------------------------------------------------------------------------------------------------------------
+
+# def fibonacci(n):
+#     if n==0:
+#         return 0
+#     elif n==1:
+#         return 1
+#     else:
+#         return fibonacci(n-1)+fibonacci(n-2)
+        
+# n=int(input("Enter the n value to find the fibonacci :"))
+# if n<0:
+#     print("Please enter a non-negative number.")
+# else:
+#     print(f"Fibonnaci number of {n} is {fibonacci(n)}")
+
+#-------------------------------------------------------------------------------------------------------------
+
+# class Animal:
+#     def sound(self):
+#         print("Panda friends Sounds be like")
+        
+# class Puppy(Animal):
+#     def sound(self):
+#         print("Puppy barks on panda like Bow Bow Bow.........")
+# class Chick(Animal):
+#     def sound(self):
+#         print("Chick calls Panda like Annayaa Anaayyaa........")
+#         #creating a object
+    
+# animal=Animal()
+# puppy=Puppy()
+# chick=Chick()
+# animal.sound()
+# puppy.sound()
+# chick.sound()
+#------------------------------------------------------------------------------------------------------------
+
+# try:
+#     numerator=float(input("Enter numerator :"))
+#     denominator=float(input("Enter denominator:"))
+#     result=numerator/denominator
+#     print(f"Result is{result}")
+# except ZeroDivisionError:
+#     print("Error: Zero divisiom error...!")
+#------------------------------------------------------------------------------------------------------------
+
+# import numpy as np
+
+# arr=np.array([2,3,5,7,3,12,3,7,5,6,13])
+# print("Array: ",repr(arr))
+# print("Max element: ",np.max(arr))
+# print("Min elemnet: ",np.min(arr))
+# print("Index of Max element: ",np.argmax(arr)) 
+# print("Index of Min elemnet: ",np.argmin(arr))
+# print("Unique elements: ",np.unique(arr))
+# print("Count of each element (using bincount): ",np.bincount(arr))
+# print("Count of 3's in the array: ",np.count_nonzero(arr==3))
+
+# num =int(input("Enter the value for comparision: "))
+
+# less=arr[arr<num]
+# greater=arr[arr>num]
+
+# print(f"The elemnets that less than {num} are ",less)
+# print(f"The elements that greater than {num} are ",greater)
+
+#-------------------------------------------------------------------------------------------------------------
+
+# import pandas as pd
+# data=[10,20,30,40,50]
+# series=pd.series(data)
+# print("The Series: ")
+# print(series)
+
+#-------------------------------------------------------------------------------------------------------------
+
+# kilograms=float(input("enter the kilograms:"))
+# pounds=kilograms*2.2
+# print(f"The {kilograms} are equal to {pounds} pounds..")
+
+#------------------------------------------------------------------------------------------------------------
+
+# for num in range(8,90,3):
+#     print(num,end=" ")
+
+#------------------------------------------------------------------------------------------------------------
+
+# def fibonacci(n):
+#     if(n==0):
+#         return 0
+#     elif(n==1):
+#         return 1
+#     else:
+#         return fibonacci(n-1)+fibonacci(n-2)
+# n=int(input("enter the number to find fibnocci: "))
+# print(f"The fibonacci of the number {n} is {fibonacci(n)}.")
+
+#-----------------------------------------------------------------------------------------------------------
+
+# class Animal:
+#     def sound(self):
+#         print("Sounds of animal")
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog Barks........")
+# class Cat(Animal):
+#     def sound(self):
+#         print("Cat meows......")
+# animal=Animal()
+# dog=Dog()
+# cat=Cat()
+# animal.sound()
+# dog.sound()
+# cat.sound()
+
+#------------------------------------------------------------------------------------------------------------
+
+# try:
+#     numerator=float(input("Enter the value of numerator: "))
+#     denominator=float(input("Enter the value of denominator: "))
+#     result=numerator/denominator
+#     print(f"The result is : {result}")
+# except ZeroDivisionError:
+#     print("Error: Zero division error...!")
+
+#------------------------------------------------------------------------------------------------------------
+
+# import numpy as np
+
+# arr = np.array([2,3,5,7,9,12,3,3,4,5,9,2,6,7])
+# print("Array: ",repr(arr))
+# print("Max element: ",np.max(arr))
+# print("Min element: ",np.min(arr))
+# print("Index of max element:",np.argmax(arr))
+# print("Index of min element: ",np.argmin(arr))
+# print("Unique elements: ",np.unique(arr))
+# print("Count of each element (Bin count): ",np.bincount(arr))
+# print("count of elament in array: ",np.count_nonzero(arr==5))
+
+# n=int(input("Enter the value for comparision: "))
+# less=arr[arr<n]
+# great=arr[arr>n]
+
+# print(f"The elements that are less than {n} are: ",less)
+# print(f"The elements that are greater than {n} are : ",great)
+
+#-------------------------------------------------------------------------------------------------------------
+
+# import pandas as pd
+
+# data=[10,20,30,40,50]
+# series=pd.Series(data)
+# print("Series of data: ")
+# print(series)
+
+#------------------------------------------------------------------------------------------------------------
+
+# import pandas as pd
+# import numpy as np
+
+# Exam_data = {
+#     'name':['anastaia','diana','katherine','james','emily','michael'],
+#     'score':[12.5,9,16.5,np.nan,9,20],
+#     'attempts':[1,3,2,3,2,3],
+#     'qualify':['Yes','No','Yes','No','Yes','no']
+#     }
+# Labels=['a','b','c','d','e','f']
+
+# df=pd.DataFrame(Exam_data,index=Labels)
+# print(df)
+
+#----------------------------------------------------------------------------------------------------------
+
+# import pandas as pd
+# import numpy as np
+
+# Exam_data = {
+#     'name':['anastaia','diana','katherine','james','emily','michael'],
+#     'score':[12.5,9,16.5,np.nan,9,20],
+#     'attempts':[1,3,2,3,2,3],
+#     'qualify':['Yes','No','Yes','No','Yes','no']
+#     }
+# Labels=['a','b','c','d','e','f']
+# df=pd.DataFrame(Exam_data,index=Labels)
+
+# grades=['B','C','D','A','E','F']
+# df['grades']=grades
+
+# print(df)
+
+#--------------------------------------------------------------------------------------------------------
+import random
+
+numbers_list = [135,146]
+# Pick one random element from the list
+random_choice = random.choice(numbers_list)
+print("She is very cute: ", random_choice)
